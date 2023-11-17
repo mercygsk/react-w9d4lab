@@ -26,7 +26,7 @@ const App = () => {
 
   return (
     <div>
-      <div style={{ border: '1px solid #ccc', padding: '10px', margin: '10px', borderRadius: '8px' , backgroundColor:'gray',textAlign:'center'}}><h1>Star Wars Starships</h1></div>
+      <header style={{position:'fixed',top:'0',left:'0',right:'0', border: '1px solid #ccc', padding: '10px', margin: '10px', borderRadius: '8px' , backgroundColor:'gray',textAlign:'center'}}><h1>Star Wars Starships</h1></header>
       {starships.map((starship, index) => (
         <div key={index} style={{ border: '1px solid #ccc', padding: '10px', margin: '10px', borderRadius: '5px', backgroundColor:'gray', float:'left' }}>
           <h3>Name:{starship.name}</h3>
